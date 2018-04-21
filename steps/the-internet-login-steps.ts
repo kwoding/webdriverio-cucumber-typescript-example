@@ -1,6 +1,6 @@
 import { Given, When, Then } from 'cucumber';
 import { TheInternetLoginPageObject } from '../page-objects/TheInternetLoginPageObject';
-import { expect } from "chai";
+import { expect } from 'chai';
 const po = new TheInternetLoginPageObject();
 
 
