@@ -6,18 +6,18 @@ class TheInternetLoginPageObject {
     private _submit: string = 'button[type="submit"]';
     private _successMessage: string = '.success';
 
-    openLoginScreen(): void {
+    public openLoginScreen(): void {
         browser.url(this._url);
     }
 
-    login(username: string, password: string): void {
+    public login(username: string, password: string): void {
         browser
             .setValue(this._username, username)
             .setValue(this._password, password)
             .click(this._submit);
     }
 
-    getConfirmationText(): string {
+    public getConfirmationText(): string {
         return browser.getText(this._successMessage);
     }
 }
